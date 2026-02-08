@@ -180,12 +180,57 @@ fun updateMapStyle(lightValue: Float) {
 
 ---
 
-## Demo
 
-<!-- Insert emulator synchronization GIF here -->
-![Real-time synchronization](./docs/demo.gif)
 
-*Real-time synchronization demonstration across multiple emulators: driver location communication and push notifications.*
+##  App Workflow & Gallery
+
+Visual demonstration of the complete user journey, showcasing the role-based architecture and real-time synchronization.
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./docs/images/1_roles.jpg" width="100%" alt="Role Based UI">
+      <br>
+      <sub><b>1. Role-Based UI Context</b><br>Distinct interfaces for Passenger (Left) and Driver (Right) within the same session. Note the bottom navigation differences.</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./docs/images/2_request.jpg" width="100%" alt="Route Optimization">
+      <br>
+      <sub><b>2. Route & Trip Request</b><br>Google Maps API integration drawing the optimized polyline (Passenger view) vs. Published trip details (Driver view).</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./docs/images/3_notification.png" width="100%" alt="Real Time Notification">
+      <br>
+      <sub><b>3. Real-Time Negotiation</b><br>Logic validation: Driver accepts a request (Right) and Passenger receives an immediate push notification (Left) via FCM.</sub>
+    </td>
+    <td align="center">
+      <img src="./docs/images/4_tracking.png" width="100%" alt="Active Trip">
+      <br>
+      <sub><b>4. Active Trip State</b><br>Dynamic map state. The "Finish Trip" button appears only when the driver is within the destination geofence.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="./docs/images/5_rating.png" width="100%" alt="Rating System">
+      <br>
+      <sub><b>5. Reputation System</b><br>End-of-trip flow allowing mutual rating (1-5 stars) to update user score in Firestore.</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Video Demonstration
+
+To see the **real-time synchronization across 3 concurrent emulators**, watch the full technical demo:
+
+[🔗 Click here to watch the full demo](https://drive.google.com/file/d/1DWwzIBxEz0cPBpBI21G5sYofP0b9jy0G/view?usp=sharing)
+
+
+
+
 
 ---
 
