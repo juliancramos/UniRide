@@ -251,10 +251,10 @@ The `AndroidManifest.xml` file declares the following permissions:
 
 ## Development Team
 
-| Member              | Username       | Role        |
-|:------------------:|:-------------:|:----------:|
-| Julian Ramos        | juliancramos  | Development|
-| Samuel Osorio       | SamuOsorio    | Development|
-| Sergio Ortiz  | SergioOrtiz145| Development|
+| Member              | GitHub Profile | Role       |
+|:------------------:|:--------------:|:----------:|
+| Julian Ramos        | [@juliancramos](https://github.com/juliancramos)  | Development|
+| Samuel Osorio       | [@SamuOsorio](https://github.com/SamuOsorio)    | Development|
+| Sergio Ortiz        | [@SergioOrtiz145](https://github.com/SergioOrtiz145)| Development|
 
 
